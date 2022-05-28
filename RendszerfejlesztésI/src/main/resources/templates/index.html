@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Főoldal</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<nav>
+    <ul class="menu">
+        <li><a class="active" href="reg.html">Regisztráció</a></li>
+        <li><a  href="login.php">Színészek</a></li>
+        <li><a href="film.html">Filmek</a></li>
+        <li><a  href="index.html">Főoldal</a></li><br/><br/>
+
+
+    </ul>
+</nav>
+
+<ul class="login1">
+    <form method="get" onclick="window.location.href='login.html'" enctype="multipart/form-data" class="login">
+        <button type="submit" name="form-submit" class="belep">Belépés</button>
+    </form>
+    <div class="topnav">
+        <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i>Keres</button>
+        </form>
+    </div>
+</ul>
+
+<legend>Filmszínház</legend>
+
+<div class="sav"></div>
+
+
+</body>
+</html>

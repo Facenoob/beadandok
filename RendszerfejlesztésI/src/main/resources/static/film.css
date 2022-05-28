@@ -1,0 +1,132 @@
+li {
+    float: right;
+}
+a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Britanni;
+    margin-right: 30px;
+    color: black;
+    background: beige;
+    border-radius: 5px;
+}
+
+.menu{
+    background-color:black;
+}
+ul {
+    padding: 50px;
+    border: double;
+    border-radius: 5px;
+    border-color: orangered;
+    margin: 0px;
+    margin-top: 20px;
+}
+.login1 {
+    background-color: orangered;
+    padding: 60px;
+    margin: 0px;
+}
+.topnav{
+    float: right;
+    margin-left: 40px;
+}
+.belep {
+    float: right;
+}
+.active {
+    background-color: orangered;
+}
+legend {
+    margin: 80px;
+    font-size: 70px;
+}
+.nav {
+    margin: 0px;
+    padding: 200px;
+    background: black;
+}
+
+html{
+    background-color: black;
+
+}
+.container1 {
+    font-family:"Bernard MT Condensed";
+    font-size: 60px;color: #cccccc;"
+    margin-left: 100px;
+    float: left;
+    width: 35%;
+}
+img {
+    width: 400px;
+    height: 600px;
+}
+.container2 {
+    margin: 20px;
+    float: left;
+    width: 40%;
+    margin-top: 250px;
+    border-left: double 30px orangered;
+    padding-left: 20px;
+    background-color: snow;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px grey;
+}
+#filmnev {
+    font-family: "Bernard MT Condensed";
+    font-size: 60px;
+    color: #cccccc;
+}
+.leir {
+    font-family: "Courier New";
+    font-size: 30px;
+}
+#kep {
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 300px;
+}
+.container3 {
+    margin-left: 150px;
+    float: left;
+    width: 80%;
+    font-family: "Arial Black";
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.galleryall{
+    float: left;
+    margin: 10px;
+    margin-left: 100px;
+    background-color: coral;
+    padding: 80px;
+    border-radius: 10px;
+
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+    float: right;
+    width: 180px;
+    margin: 10px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+

@@ -1,0 +1,61 @@
+<?php
+//session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Belépés</title>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+<nav>
+    <ul class="menu">
+        <li><a href="reg.html">Regisztráció</a></li>
+        <li><a class="active" href="login.php">Színészek</a></li>
+        <li><a href="film.html">Filmek</a></li>
+        <li><a  href="index.html">Főoldal</a></li><br/><br/>
+    </ul>
+</nav>
+<ul class="login1">
+    <form method="get" onclick="window.location.href='login.html'" enctype="multipart/form-data" class="login">
+        <button type="submit" name="form-submit" class="belep">Belépés</button>
+    </form>
+</ul>
+
+
+<br/>
+
+<main>
+    <div class="container1">
+        <form method="POST">
+            <label><b>Felhasználónév</b></label>
+            <input type="text" placeholder="Írd be a felhasználóneved" name="uname" required>
+
+            <label><b>Jelszó</b></label>
+            <input type="password" placeholder="Írd be a jelszavad" name="psw" required>
+            <br/><br/><br/>
+            <button type="submit" name="login-button">Belépés</button><br/>
+        </form>
+    </div>
+    <hr/>
+    <p>Ha még nem regisztráltál...</p>
+    <div class="container2">
+        <form method="get" onclick="window.location.href='reg.php'">
+            <button type="button" class="regist">Regisztrálok</button>
+        </form>
+    </div>
+<br/>
+    <div class="container2">
+        <form method="get" onclick="window.location.href='index.php'">
+            <button type="reset" class="cancelbtn">Vissza</button>
+        </form>
+    </div>
+
+
+
+</main>
+</body>
+</html>

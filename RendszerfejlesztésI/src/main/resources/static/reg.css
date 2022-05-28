@@ -1,0 +1,79 @@
+li {
+    float: right;
+
+}
+html{
+    background: url("pics/unnamed.jpg") no-repeat;
+    background-size: cover;
+}
+a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Britanni;
+    margin-right: 30px;
+    color: black;
+    background: beige;
+    border-radius: 5px;
+}
+.menu{
+    background-image: url("pics/marvelfilmek.png");
+}
+ul {
+
+    padding: 50px;
+    border: double;
+    border-radius: 5px;
+    border-color: orangered;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.active {
+    border-radius: 5px;
+    background-color: orangered;
+}
+.belep {
+    float: right;
+}
+
+.topnav{
+    float: right;
+    margin-left: 40px;
+}
+
+.login1 {
+    background-color: orangered;
+    padding: 20px;
+    margin: 0px;
+}
+.container {
+    float: initial;
+    border: none;
+    white-space: pre-line;
+}
+
+label {
+    margin-left: 20px;
+}
+input {
+    margin-left: 150px;
+}
+fieldset {
+    margin-top: 20px;
+    margin-left: 500px;
+    width: 450px;
+    height: 600px;
+    background: beige;
+}
+.reg {
+    float: right;
+    margin-top: 20px;
+}
+legend {
+    font-size: 25px;
+    color: whitesmoke;
+    text-align: center;
+    margin: 30px;
+}

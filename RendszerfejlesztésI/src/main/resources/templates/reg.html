@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Regisztráció</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+
+<nav>
+    <ul class="menu">
+        <li><a class="active" href="reg.html">Regisztráció</a></li>
+        <li><a  href="login.php">Színészek</a></li>
+        <li><a href="film.html">Filmek</a></li>
+        <li><a  href="index.html">Főoldal</a></li><br/><br/>
+
+
+    </ul>
+</nav>
+
+<ul class="login1">
+    <form method="get" onclick="window.location.href='login.html'" enctype="multipart/form-data" class="login">
+        <button type="submit" name="form-submit" class="belep">Belépés</button>
+    </form>
+    <div class="topnav">
+        <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i>Keres</button>
+        </form>
+    </div>
+</ul>
+<legend><b>Regisztrációhoz szükséges adatok<b/></legend>
+<fieldset>
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        <label><b>Vezetéknév</b></label>
+        <input type="text" placeholder="Add meg a vezetékneved" name="first" required>
+        <br/>
+        <label><b>Keresztnév</b></label>
+        <input type="text" placeholder="Add meg a keresztneved" name="last" required>
+        <br/>
+        <label><b>Felhasználónév</b></label>
+        <input type="text" placeholder="Válassz egy felhasználó nevet" name="uname" required>
+        <br/>
+        <label><b>E-mail cím</b></label>
+        <input type="email" placeholder="Add meg az e-mail címed" name="email" required>
+        <br/>
+        <label><b>Születési dátum</b></label>
+        <input type="date" name="birth-date" required>
+        <br/>
+        <label><b>Jelszó</b></label>
+        <input type="password" placeholder="Jelszó..." name="psw" required>
+        <br/>
+        <label><b>Jelszó újra</b></label>
+        <input type="password" placeholder="Jelszó újra..." name="psw2" required>
+        <button type="submit" class="reg" >Regisztrálok</button>
+    </form>
+</div>
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+
+
+
+
+
+
+
+    </form>
+</div>
+</fieldset>
+<div>
+
+</div>
+
+</body>
+</html>

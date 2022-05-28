@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="~{layouts/main}">
+<head>
+    <meta charset="UTF-8">
+    <title>Főoldal</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel='stylesheet' href='../css/film.css'>
+   </head>
+<body>
+<nav>
+    <ul class="menu">
+        <li><a class="active" href="reg.html">Regisztráció</a></li>
+        <li><a href="login.php">Színészek</a></li>
+        <li><a href="film.html">Filmek</a></li>
+        <li><a href="index.html">Főoldal</a></li><br/><br/>
+    </ul>
+</nav>
+
+<ul class="login1">
+    <form method="get" onclick="window.location.href='login.html'" enctype="multipart/form-data" class="login">
+        <button type="submit" name="form-submit" class="belep">Belépés</button>
+    </form>
+    <div class="topnav">
+        <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i>Keres</button>
+        </form>
+    </div>
+</ul>
+<div class="container">
+    <div class="container1">
+        <tr th:each ="film:${film}">
+            <td th:text ="${film.title}">
+            </td>
+            <td><img th:src="'/images/poster/'+${film.image}"></td>
+        </tr>
+    </div>
+    <div class="container2">
+        <table>
+            <tr>
+                <td>Kiadás éve:</td>
+                <td class="leir" th:text="${film.release}"></td>
+            </tr>
+            <tr>
+                <td>Korhatár:</td>
+                <td class="leir" th:text="${film.age_restriction}"></td>
+            </tr>
+            <tr>
+                <td>Rendező:</td>
+                <td class="leir" th:text="${film.director}"></td>
+            </tr>
+            <tr>
+                <td>Játékidő:</td>
+                <td class="leir" th:text="${film.game_time} +' perc' "></td>
+            </tr>
+            <tr>
+                <td>Pontszám:</td>
+                <td class="leir" th:text="${film.rate} "></td>
+            </tr>
+        </table>
+
+
+
+    </div>
+</div>
+
+<br/>
+<hr/>
+<div class="container3">
+    <p>Szereplők</p>
+</div>
+<div class="galleryall">
+
+        <table>
+            <tr th:each ="actors:${actors}">
+                <td th:text ="${actors.name}">
+                </td>
+            </tr>
+        </table>
+
+    <!--    <div class="gallery">
+            <p target="_blank" href="actor.html">
+                <img src="pics/ponyva1.jpg" alt="Tim Roth" width="600" height="400">
+            </p>
+            <tr th:each ="films:${films}">
+                <td th:text ="${films.title}">
+
+        </div>
+
+        <div class="gallery">
+            <p target="_blank" href="actor.html">
+                <img src="pics/ponyva2.jpg" alt="Amanda" width="600" height="400" >
+            </p>
+
+            <div class="desc" th:text="${actor.actor_id}"></div>
+        </div>
+        <div class="gallery">
+            <p target="_blank" href="actor.html">
+                <img src="pics/ponyva3.jpg" alt="Laura" width="600" height="400">
+            </p>
+            <div class="desc" th:text="${actor.actor_id}"></div>
+        </div>
+
+        <div class="gallery">
+            <p target="_blank" href="actor.html">
+                <img src="pics/ponyva4.jpg" alt="Travolta" width="600" height="400">
+            </p>
+            <div class="desc" th:text="${actor.actor_id}"></div>
+        </div>
+
+        <div class="gallery">
+            <p target="_blank" href="actor.html">
+                <img src="pics/ponyva5.jpg" alt="Jackson" width="600" height="400">
+            </p>
+            <div class="desc" th:text="${actor.actor_id}"></div>
+        </div>-->
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
